@@ -3,6 +3,7 @@ import Hero from "./Components/Hero/Hero"
 import './App.css'
 import CrowdPleasers from "./Components/CrowdPleasers/CrowdPleasers"
 import Cod from "./Components/Cod/Cod"
+import Pricing from "./Components/Pricing/Pricing"
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Diy />
       <Cod />
       <CrowdPleasers />
+      <Pricing />
     </>
 
   )

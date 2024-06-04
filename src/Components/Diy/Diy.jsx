@@ -2,13 +2,12 @@ import React from 'react'
 import './Diy.css'
 import Arrow from '../Arrow/Arrow'
 
-
 export default function Diy() {
   return (
     <div id='diy' className='diy'>
-      <div className='container'>
+      <div className='container1'>
         <h1>BUILD YOUR OWN COCKTAIL</h1>
-        <div className='inner-container'>
+        <div className='inner-container1'>
           <section className='form'>
             form
           </section>
@@ -21,6 +20,7 @@ export default function Diy() {
 
       <div className="diy-arrow">
         <Arrow href='#cod' />
+
       </div>
 
     </div>

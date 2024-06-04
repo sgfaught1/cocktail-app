@@ -1,7 +1,7 @@
 .arrow-icon {
     transform: scale(3);
     text-align: center;
-    color: white;
+    color: aqua;
     animation: bounce 4s infinite;
     position: absolute;
     bottom: 3.5em;
