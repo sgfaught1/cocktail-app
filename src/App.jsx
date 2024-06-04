@@ -4,6 +4,7 @@ import './App.css'
 import CrowdPleasers from "./Components/CrowdPleasers/CrowdPleasers"
 import Cod from "./Components/Cod/Cod"
 import Pricing from "./Components/Pricing/Pricing"
+import Footer from "./Components/Footer/Footer"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Cod />
       <CrowdPleasers />
       <Pricing />
+      <Footer />
     </>
 
   )

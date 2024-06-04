@@ -1,6 +1,6 @@
 import React from 'react'
 import './Cod.css'
-import Arrow from '../Arrow/Arrow'
+
 
 
 export default function Cod() {

@@ -1,0 +1,67 @@
+.footer {
+    height: 100vh;
+    width: 100%;
+    background-color: #1c1e26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h2 {
+    font-size: 4em;
+    color: white;
+}
+
+.footer-accordian {
+    height: 100vh;
+    width: 100%;
+    background-color: #1c1e26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    height: 50%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 1.5em; 
+}
+
+.contact2 a {
+
+    text-decoration: none;
+    position: relative;
+   
+   
+}
+
+.contact p {
+    color: white;
+}
+
+.contact p a {
+    font-size: 1.5em;
+    margin-left: 1em;
+    color: white;
+}
+
+.box-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}

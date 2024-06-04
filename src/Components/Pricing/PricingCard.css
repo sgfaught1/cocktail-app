@@ -8,4 +8,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    transition: ease-in-out .25s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
 }
