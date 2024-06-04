@@ -14,9 +14,7 @@ export default function Cod() {
           <section className='image'>
             Image of cocktail
           </section>
-
         </div>
-
       </div>
       <div className='container'>
         <h1>RANDOM COCKTAIL</h1>
@@ -27,12 +25,10 @@ export default function Cod() {
           <section className='image'>
             Image of cocktail
           </section>
-
         </div>
-
       </div>
-      
     </div>
-
-  )
+  );
 }
+
+

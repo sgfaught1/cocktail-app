@@ -5,6 +5,7 @@
     animation: bounce 4s infinite;
     position: absolute;
     bottom: 3.5em;
+    z-index: 2;
 }
 
 .arrow-flex {

@@ -1,6 +1,7 @@
 import React from 'react'
 import './CrowdPleaserCard.css'
 
+
 export default function CrowdPleaserCard({ title, info, ingredients }) {
     return (
         <>

@@ -2,6 +2,7 @@ import React from 'react'
 import './Diy.css'
 import Arrow from '../Arrow/Arrow'
 
+
 export default function Diy() {
   return (
     <div id='diy' className='diy'>

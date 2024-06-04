@@ -6,7 +6,9 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 export default function Arrow({ href }) {
     return (
         <>
-            <a href={href} className='arrow-flex'><ArrowDownwardIcon className='arrow-icon' /></a>
+            <a href={href} className='arrow-flex'>
+                <ArrowDownwardIcon className='arrow-icon' />
+            </a>
         </>
     )
 }
