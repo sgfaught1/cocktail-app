@@ -1,0 +1,45 @@
+.diy {
+    height: 100%;
+    width: 100%;
+    background-color: #1c1e26;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    background-color: #e6e1e1;
+    height: 80%;
+    width: 80%;
+    border-radius: 50px;
+    
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.inner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+    width: 100%;
+}
+
+.form{
+    width: 50%;
+}
+
+.image{
+    width: 50%;
+}
+
+.diy-arrow{
+    position: relative;
+    top: 18em;
+}

@@ -1,0 +1,23 @@
+.arrow-icon {
+    transform: scale(3);
+    text-align: center;
+    color: white;
+    animation: bounce 4s infinite;
+    position: absolute;
+    bottom: 3.5em;
+}
+
+.arrow-flex {
+    display: block;
+    text-align: center;
+    /* background-color: #1c1e26; */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(3) translateY(0);
+    }
+    50% {
+        transform: scale(3) translateY(-10px);
+    }
+}
