@@ -4,11 +4,11 @@ import './PricingCard.css'
 export default function PricingCard({title, info, price}) {
     return (
         <div className='pricing-card'>
-            <h2>
+            <h3>
                 {title}
-            </h2>
+            </h3>
             <p>{info}</p>
-            <p>${price} / month</p>
+            <p>${price}</p>
         </div>
     )
 }

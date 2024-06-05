@@ -22,24 +22,60 @@
 .container2 h1 {
     text-align: center;
 }
+.container2 h2 {
+    text-align: center;
+}
 
 .inner-container2{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     text-align: center;
     height: 80%;
     width: 100%;
+    overflow: auto;
 }
 
-.form{
+.form1 {
     width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    border-right: 4px double maroon;
+    overflow: auto;
+}
+
+.form1 p {
+    position: relative;
+    bottom: 1em;
+    text-align: left;
+    padding: 0 3em 3em;
+    overflow: auto;
+}
+
+.container2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: justify;
+    position: relative;
+    left: 6.5em;
+}
+
+.backgroundContainer{
+    height: 40vh;
+    width: 40%;
+    border-radius: 100px;
+    margin: 3em;
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .image{
     width: 50%;
-}
-.where {
-    background-color: blue;
-    height: 50px;
+    overflow: auto;
+   
 }
