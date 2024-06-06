@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .container1 {
@@ -17,6 +18,11 @@
     height: 80%;
     width: 80%;
     border-radius: 50px;
+    overflow: hidden; /* Ensure container doesn't overflow */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container1 h1 {
@@ -39,8 +45,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    height: 40%;
+    align-items: flex-start; /* Align items at the start */
+    height: 50%; /* Adjusted height to fit within container */
     width: 100%;
     border-top: maroon double 10px;
     border-bottom: maroon double 10px;
@@ -52,17 +58,22 @@
     width: 40%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px; /* Add padding for spacing */
 }
 
-
+input {
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 8px 12px;
+}
 
 .inner-container1-list {
     width: 40%;
-    height: 100%;
+    height: 80%;
     overflow: auto;
     padding: 15px; /* Add padding for spacing */
     text-align: center;
@@ -77,6 +88,12 @@
 .inner-container1-list li {
     margin-bottom: 10px; /* Add margin to create space between list items */
     cursor: pointer;
+    transition: ease-in-out .25s;
+}
+
+.inner-container1-list li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .drink-listings-container {
@@ -89,7 +106,6 @@
 .form {
     width: 100%;
 }
-
 
 .diy-arrow {
     position: relative;
@@ -104,21 +120,79 @@
 .selected-drink-image {
     margin-top: 20px;
     text-align: center;
-    width: 40%
+    width: 40%;
+    height: 100%; /* Ensure image does not overflow */
 }
 
-  
 .selected-drink-image img {
     max-width: 100%;
-    height: 40%;
+    max-height: 100%; /* Ensure image does not overflow */
     border-radius: 10px;
-    transform: scale(0.85);
-    position: relative;
-    bottom: 8px;
 }
 
 .big-inner2-instructions {
     width: 40%;
-    text-align: center;
+    height: 100%; /* Adjust height to take full available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px; /* Add padding for spacing */
 }
-  
+
+.big-inner2-instructions h3 {
+    position: sticky;
+    top: 0;
+    background-color: #e6e1e1;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.ingredients-measurements {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 50%; /* Adjust height to fit within the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 20px;
+}
+
+.measurements-list, .ingredients-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 50%; /* Ensure the lists take full width */
+}
+
+.instructions-container {
+    width: 100%;
+    margin-top: 20px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    flex-grow: 1; /* Allow the instructions container to grow and fill the available space */
+}
+
+.diy-btn {
+    background-color: #4c8994;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.diy-btn:hover {
+    cursor: pointer;
+}
+
+.diy-btn:active {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #4c8994;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}

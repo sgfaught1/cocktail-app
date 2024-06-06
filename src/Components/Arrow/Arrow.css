@@ -1,12 +1,12 @@
-/* .arrow-icon {
-    transform: scale(3);
+.arrow-icon {
+    position: relative;
+    bottom: 3.5em;
     text-align: center;
     color: aqua;
     animation: bounce 4s infinite;
-    position: relative;
-    bottom: 3.5em;
     z-index: 2;
     background: none;
+    transform: scale(3);
 }
 
 .arrow-flex {
@@ -22,4 +22,4 @@
     50% {
         transform: scale(3) translateY(-10px);
     }
-} */
+}

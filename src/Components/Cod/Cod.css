@@ -75,7 +75,7 @@
 }
 
 .backgroundContainer img {
-    transform: scale(.5);
+    transform: scale(.4);
     border: #1c1e26 solid 1px;
     border-radius: 100px;
     position: relative;
@@ -84,6 +84,50 @@
 
 .image{
     width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    
     overflow: auto;
-   
 }
+
+.list-holders {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.list-holders ul {
+    padding-right: 3em;
+    margin-top: 0;
+    /* position: relative;
+    bottom: 1em;
+    text-align: left;
+    padding: 0 3em 3em;
+    overflow: auto; */
+}
+
+.cod-btn {
+    background-color:  #4c8994;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .cod-btn:hover {
+    cursor: pointer;
+  }
+  
+  .cod-btn:active {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #358a7c;
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }

@@ -15,8 +15,9 @@ export default function Hero() {
             <h2>Cocktail TITLE</h2>
             <p>Not sure where to begin to make your own cocktails?</p>
           </div>
+          
         </div>
-        
+  
       </div>
     </div>
   );
