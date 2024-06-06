@@ -58,6 +58,8 @@
     padding: 20px; /* Add padding for spacing */
 }
 
+
+
 .inner-container1-list {
     width: 40%;
     height: 100%;
@@ -74,6 +76,7 @@
 
 .inner-container1-list li {
     margin-bottom: 10px; /* Add margin to create space between list items */
+    cursor: pointer;
 }
 
 .drink-listings-container {
@@ -87,14 +90,6 @@
     width: 100%;
 }
 
-.drink-listings {
-    width: 100%;
-}
-
-.drink-listings ul {
-    overflow: auto;
-    list-style-type: none;
-}
 
 .diy-arrow {
     position: relative;
@@ -105,3 +100,25 @@
     display: block;
     width: 100%;
 }
+
+.selected-drink-image {
+    margin-top: 20px;
+    text-align: center;
+    width: 40%
+}
+
+  
+.selected-drink-image img {
+    max-width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    transform: scale(0.85);
+    position: relative;
+    bottom: 8px;
+}
+
+.big-inner2-instructions {
+    width: 40%;
+    text-align: center;
+}
+  

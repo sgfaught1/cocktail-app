@@ -2,6 +2,8 @@ import React from 'react'
 import './Cod.css'
 import { useState, useEffect } from 'react';
 import neonSign from '../../assets/neon-sign.jpg';
+import Skip from '../Skip/Skip';
+import Arrow from '../Arrow/Arrow';
 
 
 
@@ -91,12 +93,17 @@ export default function Cod() {
         </div>
       </div>
       <button onClick={setCocktail}>Drink Away!</button>
-      <div className='backgroundContainer' style={{
+      {/* <div className='backgroundContainer' style={{
         backgroundImage:
           daily.image === "Picture!" ? `url(${neonSign})` : `url(${daily.image})`
       }}>
+        
+      </div> */}
+
+      <div className='backgroundContainer'>
+        <img src={daily.image} alt="" />
       </div>
-      
+  
     </div>
   );
 }

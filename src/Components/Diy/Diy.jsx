@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 export default function Diy() {
   const [cocktailList, setCocktailList] = useState([])
+  const [selectedDrinkImage, setSelectedDrinkImage] = useState({drinkImage: '', inst: ''})
 
   const { register, handleSubmit, getValues, formState: { errors } } = useForm();
 
@@ -33,7 +34,16 @@ export default function Diy() {
 
     let cocktailListings = await getCocktailList(mainIngredient)
     setCocktailList(() => cocktailListings.map((drink) => drink.strDrink))
-    console.log('hi')
+  }
+
+  async function fetchDrinkImage(drinkName) {
+    try {
+      let res1 = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + drinkName)
+      let drinkSelected = await res1.json()
+      setSelectedDrinkImage({drinkImage: drinkSelected.drinks[0].strDrinkThumb, inst: drinkSelected.drinks[0].strInstructions})
+    } catch(e) {
+      console.log ('ERROR: ', e)
+    }
   }
 
 
@@ -60,16 +70,19 @@ export default function Diy() {
             </div>
             <div className='inner-container1-list'>
               <ul >
-                {cocktailList.map(item => {
-                  return <li>{item}</li>
+                {cocktailList.map((item, index) => {
+                  return <li key = {index} onClick={() => fetchDrinkImage(item)}>{item}</li>
                 })}
               </ul>
             </div>
         </div>
 
         <div className='big-inner2'>
-          <div>
-            <h3>asdfasdf</h3>
+          <div className='selected-drink-image'>
+            <img src={selectedDrinkImage.drinkImage} />
+          </div>
+          <div className='big-inner2-instructions'>
+            {selectedDrinkImage.inst}
           </div>
         </div>
 
@@ -77,10 +90,7 @@ export default function Diy() {
 
 
 
-      <div className="diy-arrow">
-        <Arrow href='#cod' />
 
-      </div>
 
     </div>
   )

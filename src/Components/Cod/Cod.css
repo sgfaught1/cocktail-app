@@ -63,15 +63,23 @@
 .backgroundContainer{
     height: 40vh;
     width: 40%;
-    border-radius: 100px;
+    /* border-radius: 100px;
     margin: 3em;
     background-size: contain; 
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.backgroundContainer img {
+    transform: scale(.5);
+    border: #1c1e26 solid 1px;
+    border-radius: 100px;
+    position: relative;
+
 }
 
 .image{

@@ -18,7 +18,6 @@ export default function Hero() {
         </div>
         
       </div>
-    <Arrow href = '#diy'/>
     </div>
   );
 }

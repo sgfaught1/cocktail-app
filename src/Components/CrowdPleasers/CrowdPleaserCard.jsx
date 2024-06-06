@@ -5,7 +5,7 @@ import './CrowdPleaserCard.css'
 export default function CrowdPleaserCard({ title, info, ingredients }) {
     return (
         <>
-            <div className='flip-card' id='crowd-pleasers'>
+            <div className='flip-card' >
                 <div className='flip-card-inner'>
                     <div className='flip-card-front card '>
                         <h3>TITLE</h3>
