@@ -54,23 +54,25 @@ export default function Footer() {
                 </Box>
             </div>
             <div className='footer-accordian'>
-                <Accordion sx = {{backgroundColor: 'antiquewhite'}}>
+                <Accordion sx={{ backgroundColor: 'antiquewhite' }} className='fixed-height-summary'>
                     <AccordionSummary
+                        
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
                         Q: What is the origin of the word "cocktail"?
                     </AccordionSummary>
-                    <AccordionDetails>
+                    <AccordionDetails >
                         A: The origin of the word "cocktail" is somewhat debated,
                         but one popular theory is that it comes from the French term
                         "coquetier," meaning egg cup, which was used to serve mixed drinks
                         in New Orleans in the early 19th century.
                     </AccordionDetails>
                 </Accordion>
-                <Accordion sx = {{backgroundColor: 'antiquewhite'}}>
+                <Accordion sx={{ backgroundColor: 'antiquewhite' }} className='fixed-height-summary'>
                     <AccordionSummary
+
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2-content"
                         id="panel2-header"
@@ -81,8 +83,9 @@ export default function Footer() {
                         A: A Martini is considered "dirty" when olive brine is added to the mix, giving the drink a cloudy appearance and a slightly salty taste.
                     </AccordionDetails>
                 </Accordion>
-                <Accordion sx = {{backgroundColor: 'antiquewhite'}}>
+                <Accordion sx={{ backgroundColor: 'antiquewhite' }} className='fixed-height-summary'>
                     <AccordionSummary
+
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2-content"
                         id="panel2-header"
@@ -93,8 +96,9 @@ export default function Footer() {
                         A: A cocktail is an alcoholic mixed drink, while a mocktail is a non-alcoholic version of a mixed drink, designed to replicate the taste and experience of a cocktail without any alcohol content.
                     </AccordionDetails>
                 </Accordion>
-                <Accordion sx = {{backgroundColor: 'antiquewhite'}}>
+                <Accordion sx={{ backgroundColor: 'antiquewhite' }} className='fixed-height-summary'>
                     <AccordionSummary
+
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2-content"
                         id="panel2-header"
