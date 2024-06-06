@@ -1,7 +1,7 @@
 .card {
-    height: 600px;
+    min-height: 600px;
     width: 300px;
-    background-color: #e6e1e1;
+    background-color: antiquewhite;
     margin: .5em;
     border-radius: 10px;
     display: flex;
@@ -17,7 +17,7 @@
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 200px;
+    height: 600px;
    
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -50,6 +50,7 @@
   .flip-card-front {
     background-color: #bbb;
     color: black;
+    padding: 10px;
   }
   
   /* Style the back side */
@@ -57,5 +58,14 @@
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+    border-radius: 10px;
+    position: relative;
+    top: 8px;
+    right: 8px;
+  }
+
+  .crowd-image img {
+    height: 150px;
+    width: 175px;
     border-radius: 10px;
   }

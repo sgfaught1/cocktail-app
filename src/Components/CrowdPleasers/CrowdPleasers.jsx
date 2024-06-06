@@ -1,18 +1,96 @@
-import React from 'react'
-import './CrowdPleasers.css'
-import CrowdPleaserCard from './CrowdPleaserCard'
-import Arrow from '../Arrow/Arrow'
-
-
-
+import React from 'react';
+import './CrowdPleasers.css';
+import CrowdPleaserCard from './CrowdPleaserCard';
 
 export default function CrowdPleasers() {
   return (
     <div className='cp-container'>
-      <div className='main3' id='crowd-pleasers'>
-        <CrowdPleaserCard title='title' info="info" ingredients={['vodka', 'orange juice', 'champagne']} />
-       
+      <div className='cp-inner'>
+        <div>
+          <h1>Our Favorites</h1>
+        </div>
+        <div className='main3' id='crowd-pleasers'>
+          <div className='crowd-pleasers-container'>
+            <CrowdPleaserCard
+              title='The Grizzly Bear'
+              info="The Grizzly Bear cocktail is a classic bourbon-based drink that appeals to a wide range of palates. Its simple yet flavorful ingredients and versatile nature make it a popular choice among cocktail enthusiasts."
+              ingredients={[
+                'Bourbon',
+                "Amaretto",
+                "Jägermeister",
+                "Kahlua",
+                "Milk"
+              ]}
+              measurements={["1 part", '1 part',
+                "1 part",
+                "1 part",
+                "2 1/2 parts"]} />
+            <CrowdPleaserCard
+              title='The Strange Weaver'
+              info="The floral notes from the elderflower liqueur complement the botanicals of the gin, while the hint of absinthe adds a subtle herbal complexity. The Strange Weaver cocktail is an adventurous choice for those looking to explore new and distinctive flavor combinations in their cocktails."
+              ingredients={["Light Rum",
+                " Gin",
+                "Elderflower liquer",
+                "Absinthe",
+                "Lemon Juice",
+                "Orgeat Syrup",
+                "Orange Peel"]}
+              measurements={["1 oz",
+                "1 oz",
+                "0.75 oz",
+                "0.75 oz",
+                "Dash",
+                "Dash",
+                "Garnish with"]} />
+            <CrowdPleaserCard
+              title='The Gagliardo'
+              info="The Gagliardo cocktail is named after the Italian liqueur Gagliardo Amaro. This liqueur is known for its bittersweet flavor profile, derived from a blend of botanicals and herbs. The cocktail likely originated as a way to highlight the unique taste of this liqueur, possibly in Italy or among mixologists familiar with Italian spirits."
+              ingredients={['Peach Vodka', 'Lemon juice', "Galliano", "Syrup of roses"]}
+              measurements={['5 parts', '3 parts', '1 part', '1 part']} />
+            <CrowdPleaserCard
+              title='The Golden Dream'
+              info="The Golden Dream cocktail is believed to have been created in the 1950s or 1960s by the famous bartender, Peter Heering. Heering was known for his innovative cocktail creations, and the Golden Dream is one of his most enduring contributions to mixology. The cocktail gained popularity during the mid-20th century and has remained a beloved classic ever since."
+              ingredients={["Galliano",
+                "Triple Sec",
+                "orange juice",
+                "Cream"]}
+              measurements={["2 parts",
+                "2 parts",
+                "2 parts",
+                "1 part"]} />
+            <CrowdPleaserCard
+              title='The Boulevardier'
+              info="The Boulevardier cocktail is believed to have been created in the 1920s by Harry McElhone, an American bartender who owned Harry's New York Bar in Paris. Its creation is often attributed to McElhone's experiences in Paris during the Prohibition era, where American expatriates sought inventive ways to enjoy cocktails despite the restrictions on alcohol."
+              ingredients={["Campari",
+                "Sweet Vermouth",
+                "Rye whiskey",
+                "Orange Peel"]}
+              measurements={["1 oz",
+                "1 oz",
+                "1 1/4 oz",
+                "1"]} />
+            <CrowdPleaserCard
+              title='Mojito'
+              info='The Mojito cocktail has its roots in Cuba, dating back to the 16th century. It was initially known as "El Draque" after the English privateer Sir Francis Drake, who is said to have used a similar concoction to combat scurvy among his crew. Over time, the recipe evolved, incorporating local ingredients like lime, mint, sugar, and rum, to create the Mojito as we know it today.'
+              ingredients={["Light rum",
+                "Lime",
+                "Sugar",
+                "Mint",
+                "Soda water"]}
+              measurements={["2-3 oz",
+                "Juice of 1",
+                "2 tsp",
+                "2-4 leaves",
+                'Fill with']} />
+            <CrowdPleaserCard
+              title='Apricot Punch'
+              info="Apricot punch is often enjoyed during the summer months when apricots are in season. The sweet and tangy flavor of apricots pairs well with the refreshing qualities of a cold punch, making it a popular choice for warm-weather gatherings and parties."
+              ingredients={['Apricot Brandy', 'Champagne', 'Vodka', '7-Up', 'Orange juice']}
+              measurements={['1 qt', '4 fifth', '1 fifth', '4 L', '1/2 gal']} />
+
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
