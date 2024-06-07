@@ -1,0 +1,35 @@
+/* .whole-nav {
+    position: absolute;
+    top: 20px;
+} */
+
+.nav-links {
+    color: white;
+    font-size: .8em;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+#first-link {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.middle-nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Ensuring the navbar takes full width */
+    margin: 0;
+    padding: 0;
+}

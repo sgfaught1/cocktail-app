@@ -20,7 +20,7 @@
 
 .footer-accordian {
     height: 100vh;
-    width: 50%;
+    max-width: 800px;
     background-color: #1c1e26;
     display: flex;
     flex-direction: column;
