@@ -12,7 +12,7 @@
 
 .container2 {
     background-color: #e6e1e1;
-    height: 40%;
+    height: 567px;
     width: 80%;
     border-radius: 50px;
     margin: 3em;
@@ -78,8 +78,8 @@
     transform: scale(.4);
     border: #1c1e26 solid 1px;
     border-radius: 100px;
-    position: relative;
-
+    position: absolute;
+   margin-top: 35px;
 }
 
 .image{

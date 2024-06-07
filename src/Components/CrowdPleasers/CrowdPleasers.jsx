@@ -36,7 +36,7 @@ export default function CrowdPleasers() {
                 "1 part",
                 "1 part",
                 "2 1/2 parts"]} 
-                name = 'Adventurer'
+                name = 'Adventurers'
                 color = '#00563B'
                 icon = <ForestIcon style={{fontSize: '100px', color: '#00563B'}}/> />
             <CrowdPleaserCard
@@ -56,7 +56,7 @@ export default function CrowdPleasers() {
                 "Dash",
                 "Dash",
                 "Garnish with"]} 
-                name = 'Wanderer'
+                name = 'Wanderers'
                 color = '#E0115F'
                 icon = <FilterVintageIcon style={{fontSize: '100px', color: '#E0115F'}}/> />
             <CrowdPleaserCard
@@ -64,7 +64,7 @@ export default function CrowdPleasers() {
               info="The Gagliardo cocktail is named after the Italian liqueur Gagliardo Amaro. This liqueur is known for its bittersweet flavor profile, derived from a blend of botanicals and herbs. The cocktail likely originated as a way to highlight the unique taste of this liqueur, possibly in Italy or among mixologists familiar with Italian spirits."
               ingredients={['Peach Vodka', 'Lemon juice', "Galliano", "Syrup of roses"]}
               measurements={['5 parts', '3 parts', '1 part', '1 part']} 
-              name = 'Rebel'
+              name = 'Rebels'
               color = '#722F37'
               icon = <TwoWheelerIcon style={{fontSize: '100px', color: '#722F37'}}/> />
             <CrowdPleaserCard
@@ -78,7 +78,7 @@ export default function CrowdPleasers() {
                 "2 parts",
                 "2 parts",
                 "1 part"]} 
-                name = 'Sunset Chaser'
+                name = 'Sunset Chasers'
                 color = '#E44D2E'
                 icon = <WbTwilightIcon style={{fontSize: '100px', color: '#E44D2E'}}/> />
             <CrowdPleaserCard
