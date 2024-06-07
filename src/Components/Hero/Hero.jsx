@@ -7,7 +7,7 @@ import NavBar from '../NavBar/NavBar';
 export default function Hero() {
   return (
     <div id="hero">
-      <NavBar />
+      {/* <NavBar position='fixed'/> */}
       <div className='hero'>
         <div className='heroImage' style={{ backgroundImage: `url(${heroImage})`,  }}>
           <h1>Cocktail TITLE</h1>
@@ -15,11 +15,7 @@ export default function Hero() {
             <h2>Cocktail TITLE</h2>
             <p>Not sure where to begin to make your own cocktails?</p>
           </div> */}
-          <a href="#diy">
-            <ArrowDropDownIcon 
-              style={{ fontSize: '150px', position: 'relative', top: '150px', color: 'antiquewhite' }} 
-            />
-          </a>
+          
         </div>
       </div>
     </div>

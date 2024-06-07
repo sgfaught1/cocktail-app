@@ -140,10 +140,8 @@ export default function Cod() {
       <div className='backgroundContainer'>
         <img src={daily.image} alt="" />
       </div>
-      <a href="#cp"><ArrowDropDownIcon style={{fontSize: '150px', color: 'antiquewhite', position: 'relative', bottom: '20px'}}/></a> 
 
     </div>
   );
 }
-
 

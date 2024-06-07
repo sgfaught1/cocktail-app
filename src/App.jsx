@@ -5,20 +5,39 @@ import CrowdPleasers from "./Components/CrowdPleasers/CrowdPleasers"
 import Cod from "./Components/Cod/Cod"
 import Pricing from "./Components/Pricing/Pricing"
 import Footer from "./Components/Footer/Footer"
+import './App.css'
+
 
 
 function App() {
 
 
   return (
-    <>
-      <Hero />
-      <Diy />
-      <Cod />
-      <CrowdPleasers />
-      <Pricing />
-      <Footer />
-    </>
+    <div className="scroller">
+      <section>
+        <Hero />
+      </section>
+      <section>
+        <Diy />
+      </section>
+
+      <section>
+        <Cod />
+      </section>
+
+      <section>
+        <CrowdPleasers />
+      </section>
+
+      <section> 
+        <Pricing />
+      </section>
+
+      <section>
+        <Footer />
+      </section>
+
+    </div>
 
   )
 }

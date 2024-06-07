@@ -35,10 +35,9 @@ HideOnScroll.propTypes = {
 
 export default function NavBar(props) {
     return (
-        <React.Fragment >
+        <React.Fragment style = {{position: 'absolute', top: '20px'}}>
             <CssBaseline />
-            <HideOnScroll {...props}>
-                <AppBar >
+                <AppBar position='fixed'>
                     <Toolbar style={{ display: 'flex', justifyContent: 'space-between', backgroundColor: '#5c0202' }}>
                         <div>
                             <Typography variant="h6" component="div">
@@ -73,7 +72,6 @@ export default function NavBar(props) {
 
                     </Toolbar>
                 </AppBar>
-            </HideOnScroll>
             <Toolbar />
 
         </React.Fragment>

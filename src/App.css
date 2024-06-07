@@ -1,3 +1,13 @@
 html {
     scroll-behavior: smooth;
   }
+
+  .scroller {
+    height: 1000px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .scroller section {
+    scroll-snap-align: start;
+  }

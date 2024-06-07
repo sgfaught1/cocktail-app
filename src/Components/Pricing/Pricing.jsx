@@ -16,7 +16,6 @@ export default function Pricing() {
 
 
       </div>
-      <a href="#footer"><ArrowDropDownIcon style={{fontSize: '150px', position: 'relative', bottom: '175px', color: 'antiquewhite'}}/></a> 
 
     </div>
   )

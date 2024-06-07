@@ -104,9 +104,7 @@ export default function Diy() {
 
   return (
     <div id='diy' className='diy'>
-      <a href="#hero">
-        <ArrowDropDownIcon style={{ rotate: '180deg', fontSize: '150px', color: 'antiquewhite', position: 'absolute', bottom: '-126px', right: '646px' }} />
-      </a>
+      
       <div className='container1'>
 
         <h1>Looking for something new?</h1>
@@ -159,9 +157,7 @@ export default function Diy() {
 
         </div>
       </div>
-      <div>
-        <a href="#cod"><ArrowDropDownIcon style={{ fontSize: '150px', color: 'antiquewhite', position: 'relative', top: '50px' }} /></a>
-      </div>
+      
     </div>
   );
 }

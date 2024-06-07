@@ -122,7 +122,6 @@ export default function CrowdPleasers() {
 
           </div>
         </div>      
-        <a href="#pricing"><ArrowDropDownIcon style={{fontSize: '150px', position: 'relative', bottom: '300px', color: 'antiquewhite'}}/></a> 
 
       </div>
 
