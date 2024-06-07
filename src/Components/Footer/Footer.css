@@ -20,12 +20,13 @@
 
 .footer-accordian {
     height: 100vh;
-    width: 100%;
+    width: 50%;
     background-color: #1c1e26;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* padding-bottom: 30px; */
 }
 
 .contact{
