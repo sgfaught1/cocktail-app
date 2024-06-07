@@ -13,7 +13,7 @@ export default function Diy() {
     ingredientsDIY: []
   });
   const [searchInputValue, setSearchInputValue] = useState('');
-  const [step1,setStep1] = useState('Step 1: Pick a beverage')
+  const [step1, setStep1] = useState('Step 1: Pick a beverage')
 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -22,8 +22,8 @@ export default function Diy() {
       let res = await fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=' + mainIngredient);
       let myCocktailList = await res.json();
       if (res != undefined || res != null || mainIngredient !== '') {
-       setStep1('Step 1: You picked ' + mainIngredient.toUpperCase())
-       
+        setStep1('Step 1: You picked ' + mainIngredient.toUpperCase())
+
         return myCocktailList.drinks;
       } else {
         setSearchInputValue('');
@@ -131,8 +131,13 @@ export default function Diy() {
           <div className='selected-drink-image'>
             {selectedDrinkImage.drinkImage && <img src={selectedDrinkImage.drinkImage} alt={selectedDrinkImage.drink} />}
           </div>
+          <div className='instructions-container'>
+            <p>{selectedDrinkImage.inst}</p>
+          </div>
           <div className='big-inner2-instructions'>
-            {selectedDrinkImage.drinkImage && <h3>Step 3: Enjoy your {selectedDrinkImage.drink}</h3>}
+            <div>
+              {selectedDrinkImage.drinkImage && <h3>Step 3: Enjoy your {selectedDrinkImage.drink}</h3>}
+            </div>
             <div className='ingredients-measurements'>
               <ul className='measurements-list'>
                 {selectedDrinkImage.measurementsDIY.map((mes, index) => (
@@ -145,12 +150,9 @@ export default function Diy() {
                 ))}
               </ul>
             </div>
-            <div className='instructions-container'>
-              <p>{selectedDrinkImage.inst}</p>
-            </div>
+
           </div>
-          <div>
-          </div>
+
         </div>
       </div>
       <div>

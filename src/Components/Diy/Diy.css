@@ -27,7 +27,7 @@
 
 .container1 h1 {
     text-align: center;
-    margin-top: 20px; /* Add some margin to the heading */
+    margin-top: 0px; 
 }
 
 .big-inner1 {
@@ -43,15 +43,20 @@
 
 .big-inner2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-evenly;
     align-items: flex-start; /* Align items at the start */
     height: 50%; /* Adjusted height to fit within container */
     width: 100%;
     border-top: maroon double 10px;
     border-bottom: maroon double 10px;
-    padding-top: 20px; /* Add some padding to the top */
-    padding-bottom: 20px; /* Add some padding to the bottom */
+    padding-top: 0px; /* Add some padding to the top */
+    /* padding-bottom: 20px; */
+    margin-bottom: 0;
+}
+
+.big-inner2 h3 {
+    text-align: center;
 }
 
 .inner-container1 {
@@ -75,7 +80,7 @@ input {
     width: 40%;
     height: 80%;
     overflow: auto;
-    padding: 15px; /* Add padding for spacing */
+    padding: 15px; 
     text-align: center;
 }
 
@@ -118,16 +123,18 @@ input {
 }
 
 .selected-drink-image {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
     width: 40%;
     height: 100%; /* Ensure image does not overflow */
+   
 }
 
 .selected-drink-image img {
     max-width: 100%;
     max-height: 100%; /* Ensure image does not overflow */
-    border-radius: 10px;
+    border-radius: 10px; 
+    transform: scale(.9);
 }
 
 .big-inner2-instructions {
@@ -138,7 +145,8 @@ input {
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px; 
+    margin: 0;
 }
 
 .big-inner2-instructions h3 {
@@ -156,7 +164,8 @@ input {
     width: 100%;
     max-height: 50%; /* Adjust height to fit within the container */
     overflow-y: auto; /* Enable vertical scrolling */
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    text-align: center;
 }
 
 .measurements-list, .ingredients-list {
@@ -167,8 +176,13 @@ input {
 }
 
 .instructions-container {
-    width: 100%;
-    margin-top: 20px;
+    width: 30%;
+    border-left: maroon 4px dotted;
+    border-right: maroon 4px dotted;
+    text-align: center;
+    align-self: center;
+    padding: 10px;
+    /* margin-top: 20px; */
     overflow-y: auto; /* Enable vertical scrolling */
     flex-grow: 1; /* Allow the instructions container to grow and fill the available space */
 }
