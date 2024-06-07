@@ -1,10 +1,12 @@
 import React from 'react'
 import './Pricing.css'
 import PricingCard from './PricingCard'
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
 
 export default function Pricing() {
   return (
-    <div className='pricing-container'>
+    <div id = 'pricing' className='pricing-container'>
      
       <div className='pricing'>
         
@@ -14,6 +16,8 @@ export default function Pricing() {
 
 
       </div>
+      <a href="#footer"><ArrowDropDownIcon style={{fontSize: '150px', position: 'relative', bottom: '175px', color: 'antiquewhite'}}/></a> 
+
     </div>
   )
 }

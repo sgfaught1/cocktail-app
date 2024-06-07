@@ -6,6 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .cp-container {
@@ -29,6 +30,7 @@
 .cp-inner h1 {
     height: 100%;
     width: 100%;
+    text-align: center;
     color: antiquewhite;
 }
 
@@ -41,9 +43,12 @@
 
 .crowd-pleasers-container {
     display: flex;
+    height: 70%;
     overflow-x: auto;
     width: 100%;
     padding: 10px 0; /* Adjust as needed */
+    position: relative;
+    bottom: 90px;
   }
   
   .crowd-pleasers-container > * {
@@ -56,4 +61,33 @@
     padding-right: 5px;
   }
 
+ .cp-titles h2{
+    color: antiquewhite;
+    text-align: center;
+ }
  
+ .cp-titles div{
+    color: antiquewhite;
+    text-align: center;
+ }
+
+ .lil-arrow {
+    position: relative;
+    top: 6em;
+    text-align: center;
+   
+    animation: bounce 4s infinite;
+    z-index: 2;
+    background: none;
+    transform: scale(4);
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(4) translateY(0);
+    }
+    50% {
+        transform: scale(4) translateY(-10px);
+    }
+}

@@ -18,8 +18,19 @@
     background-color: transparent;
     width: 300px;
     height: 600px;
-   
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flip-card-front h5 {
+    font-size: 2em;
+  }
+ 
+  .flip-card-front span {
+    font-size: 1.5em;
   }
   
   /* This container is needed to position the front and back side */
@@ -55,13 +66,18 @@
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #bbb;
+    color: black;
     transform: rotateY(180deg);
     border-radius: 10px;
     position: relative;
     top: 8px;
     right: 8px;
+    padding: 30px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .crowd-image img {

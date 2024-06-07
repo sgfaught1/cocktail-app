@@ -13,7 +13,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function Footer() {
     return (
-        <div className='footer'>
+        <div id = 'footer' className='footer'>
             <h2>FAQ</h2>
             <h3>DID YOU KNOW?</h3>
             <div className='box-flex'>

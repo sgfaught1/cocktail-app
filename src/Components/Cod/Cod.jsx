@@ -2,9 +2,9 @@ import React from 'react'
 import './Cod.css'
 import { useState, useEffect } from 'react';
 import LocalBarIcon from '@mui/icons-material/LocalBar';
-import neonSign from '../../assets/neon-sign.jpg';
-import Skip from '../Skip/Skip';
-import Arrow from '../Arrow/Arrow';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
+
 
 
 
@@ -140,6 +140,7 @@ export default function Cod() {
       <div className='backgroundContainer'>
         <img src={daily.image} alt="" />
       </div>
+      <a href="#cp"><ArrowDropDownIcon style={{fontSize: '150px', color: 'antiquewhite', position: 'relative', bottom: '20px'}}/></a> 
 
     </div>
   );

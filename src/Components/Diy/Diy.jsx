@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './Diy.css';
 import { useForm } from "react-hook-form";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
+
+
 
 export default function Diy() {
   const [cocktailList, setCocktailList] = useState([]);
@@ -120,30 +124,36 @@ export default function Diy() {
         </div>
 
         <div className='big-inner2'>
-    <div className='selected-drink-image'>
-        {selectedDrinkImage.drinkImage && <img src={selectedDrinkImage.drinkImage} alt={selectedDrinkImage.drink} />}
-    </div>
-    <div className='big-inner2-instructions'>
-        {selectedDrinkImage.drinkImage && <h3>Step 3: Enjoy your {selectedDrinkImage.drink}</h3>}
-        <div className='ingredients-measurements'>
-            <ul className='measurements-list'>
+          <div className='selected-drink-image'>
+            {selectedDrinkImage.drinkImage && <img src={selectedDrinkImage.drinkImage} alt={selectedDrinkImage.drink} />}
+          </div>
+          <div className='big-inner2-instructions'>
+            {selectedDrinkImage.drinkImage && <h3>Step 3: Enjoy your {selectedDrinkImage.drink}</h3>}
+            <div className='ingredients-measurements'>
+              <ul className='measurements-list'>
                 {selectedDrinkImage.measurementsDIY.map((mes, index) => (
-                    <li key={index}>{mes}</li>
+                  <li key={index}>{mes}</li>
                 ))}
-            </ul>
-            <ul className='ingredients-list'>
+              </ul>
+              <ul className='ingredients-list'>
                 {selectedDrinkImage.ingredientsDIY.map((ing, index) => (
-                    <li key={index}>{ing}</li>
+                  <li key={index}>{ing}</li>
                 ))}
-            </ul>
+              </ul>
+            </div>
+            <div className='instructions-container'>
+              <p>{selectedDrinkImage.inst}</p>
+            </div>
+          </div> 
+          <div>
+            </div>
+           
         </div>
-        <div className='instructions-container'>
-            <p>{selectedDrinkImage.inst}</p>
-        </div>
-    </div>
-</div>
 
-
+               
+      </div> 
+      <div>
+             <a href="#cod"><ArrowDropDownIcon style={{fontSize: '150px', color: 'antiquewhite', position: 'relative', top: '12px'}}/></a> 
       </div>
     </div>
   );
