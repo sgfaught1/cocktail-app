@@ -104,7 +104,11 @@ export default function Diy() {
 
   return (
     <div id='diy' className='diy'>
+      <a href="#hero">
+        <ArrowDropDownIcon style={{ rotate: '180deg', fontSize: '150px', color: 'antiquewhite', position: 'absolute', bottom: '-126px', right: '646px' }} />
+      </a>
       <div className='container1'>
+
         <h1>Looking for something new?</h1>
         <div className='big-inner1'>
           <div className='inner-container1'>
@@ -131,7 +135,7 @@ export default function Diy() {
           <div className='selected-drink-image'>
             {selectedDrinkImage.drinkImage && <img src={selectedDrinkImage.drinkImage} alt={selectedDrinkImage.drink} />}
           </div>
-          <div className='instructions-container'>
+          <div className='instructions-container' style={{ borderLeft: selectedDrinkImage.inst !== '' && 'maroon 4px dotted', borderRight: selectedDrinkImage.inst !== '' && 'maroon 4px dotted' }}>
             <p>{selectedDrinkImage.inst}</p>
           </div>
           <div className='big-inner2-instructions'>
@@ -156,7 +160,7 @@ export default function Diy() {
         </div>
       </div>
       <div>
-        <a href="#cod"><ArrowDropDownIcon style={{ fontSize: '150px', color: 'antiquewhite', position: 'relative', top: '12px' }} /></a>
+        <a href="#cod"><ArrowDropDownIcon style={{ fontSize: '150px', color: 'antiquewhite', position: 'relative', top: '50px' }} /></a>
       </div>
     </div>
   );
