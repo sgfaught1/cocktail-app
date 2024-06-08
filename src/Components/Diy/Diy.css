@@ -152,7 +152,7 @@ input {
 }
 
 .big-inner2-instructions h3 {
-    position: sticky;
+    position: static;
     top: 0;
     background-color: #e6e1e1;
     width: 100%;
@@ -190,6 +190,10 @@ input {
     justify-content: flex-start;
 }
 
+.instructions-container h3{
+    position: static;
+}
+
 
 .diy-btn {
     background-color: #4c8994;
@@ -221,4 +225,168 @@ input {
     align-items: center;
     gap: 4em;
    
+}
+
+/* Media Query for laptops */
+@media only screen and (max-width: 1366px) {
+    .container1 {
+        width: 90%;
+    }
+    
+
+
+    .inner-container1,
+    .inner-container1-list,
+    .selected-drink-image,
+    .big-inner2-instructions,
+    .instructions-container {
+        width: 50%;
+    }
+
+    .big-inner2-instructions h3 {
+        position: static;
+    }
+    
+    .holder {
+        gap: 2em;
+    }
+}
+
+@media only screen and (max-width: 867px) {
+    .container1 {
+        width: 90%;
+    }
+
+    .inner-container1,
+    .inner-container1-list,
+    .selected-drink-image,
+    .big-inner2-instructions,
+    .instructions-container {
+        width: 80%;
+    }
+
+    .selected-drink-image {
+        position: relative;
+        top: 20px;
+
+    }
+
+    .ingredients-measurements {
+        position: relative;
+        top: 40px;
+        min-height: 500px;
+    }
+
+    .big-inner2-instructions h3 {
+        visibility: hidden;
+    }
+    
+    .holder {
+        gap: 2em;
+        display: none;
+    }
+}
+
+
+/* Media Query for tablets */
+@media only screen and (max-width: 768px) {
+    .container1 {
+        width: 90%;
+    }
+
+    .inner-container1,
+    .inner-container1-list,
+    .selected-drink-image,
+    .big-inner2-instructions,
+    .instructions-container {
+        width: 80%;
+    }
+
+    .big-inner2-instructions{
+        position: relative;
+        top: 50px;
+    }
+
+    .selected-drink-image {
+        position: relative;
+        top: 80px;
+
+    }
+
+    /* .big-inner1,
+    .big-inner2 {
+        height: 30%;
+    } */
+
+    /* .big-inner2 {
+        flex-direction: row;
+    } */
+
+    .big-inner2-instructions h3 {
+        visibility: hidden;
+    }
+    
+    .holder {
+        gap: 2em;
+        position: absolute;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .container1 {
+        width: 90%;
+    }
+
+    .inner-container1,
+    .inner-container1-list,
+    .selected-drink-image,
+    .big-inner2-instructions,
+    .instructions-container {
+        width: 100%;
+    }
+
+    .instructions-container{
+        display: none;
+    }
+
+    .selected-drink-image {
+       display: none;
+    }
+
+    .ingredients-measurements {
+        margin-top: 20px;
+    }
+
+    .big-inner2-instructions h3 {
+        visibility: hidden;
+    }
+    .big-inner2-instructions{
+        position: relative;
+        bottom: 400px;
+    }
+
+    .ingredients-measurements{
+        position: absolute;
+        top: -20px;
+    }
+    
+    .holder {
+        gap: 2em;
+        display: none;
+    }
+
+    .big-inner1,
+    .big-inner2 {
+        flex-direction: column;
+        align-items: center;
+        height: 60%;
+    }
+    .big-inner2{
+        height: 30%;
+    }
+
+    .inner-container1 {
+        margin-bottom: 20px;
+    }
 }

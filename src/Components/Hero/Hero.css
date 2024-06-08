@@ -43,14 +43,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  animation: welcomeAnimation 3s ease-in-out infinite;
+  /* animation: welcomeAnimation 3s ease-in-out infinite; */
   position: relative;
   margin-bottom: 10px;
   padding: 0.2em 0.5em;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
-  bottom: 175px;
+  bottom: 125px;
 }
 
 .heroImage h1 {
@@ -66,7 +66,7 @@ body {
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
-  bottom: 250px;
+  bottom: 200px;
 }
 
 .heroImage .swipeText {
@@ -76,24 +76,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  animation: swipeAnimation 3s ease-in-out infinite;
+  /* animation: swipeAnimation 3s ease-in-out infinite; */
   position: relative;
   margin-top: 20px;
   padding: 0.2em 0.5em;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
-  top: 200px;
+  top: 20px;
 }
 
-@keyframes welcomeAnimation {
-  0%, 100% {
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 1;
-  }
-}
+
 
 @keyframes textAnimation {
   0% {
@@ -107,11 +100,54 @@ body {
   }
 }
 
-@keyframes swipeAnimation {
-  0%, 100% {
-    opacity: 0.7;
+
+@media only screen and (max-width: 1024px) {
+  .heroImage .welcomeText {
+    font-size: 1.5em;
+    bottom: 145px;
   }
-  50% {
-    opacity: 1;
+
+  .heroImage h1 {
+    font-size: 4em;
+    bottom: 200px;
+  }
+
+  .heroImage .swipeText {
+    font-size: 1.2em;
+    top: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heroImage .welcomeText {
+    font-size: 1.5em;
+    bottom: 145px;
+  }
+
+  .heroImage h1 {
+    font-size: 4em;
+    bottom: 200px;
+  }
+
+  .heroImage .swipeText {
+    font-size: 1.2em;
+    top: 150px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .heroImage .welcomeText {
+    font-size: 1.2em;
+    bottom: 110px;
+  }
+
+  .heroImage h1 {
+    font-size: 3em;
+    bottom: 150px;
+  }
+
+  .heroImage .swipeText {
+    font-size: 1em;
+    top: 120px;
   }
 }

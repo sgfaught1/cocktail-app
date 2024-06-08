@@ -57,7 +57,7 @@ export default function Footer() {
                 <Accordion sx={{ backgroundColor: '#e6e1e1' }} className='fixed-height-summary'>
                     <AccordionSummary
                         
-                        expandIcon={<ExpandMoreIcon sx={{color: '#4c8995', fontWeight: 'bold'}}/>}
+                        expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -86,7 +86,7 @@ export default function Footer() {
                 <Accordion sx={{ backgroundColor: '#e6e1e1' }} className='fixed-height-summary'>
                     <AccordionSummary
 
-                        expandIcon={<ExpandMoreIcon sx={{color: '#4c8995', fontWeight: 'bold'}}/>}
+                        expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2-content"
                         id="panel2-header"
                     >
@@ -99,7 +99,7 @@ export default function Footer() {
                 <Accordion sx={{ backgroundColor: '#e6e1e1' }} className='fixed-height-summary'>
                     <AccordionSummary
 
-                        expandIcon={<ExpandMoreIcon sx={{color: '#4c8995', fontWeight: 'bold'}}/>}
+                        expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel2-content"
                         id="panel2-header"
                     >
