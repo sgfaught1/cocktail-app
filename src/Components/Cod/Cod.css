@@ -12,11 +12,12 @@
 
 .container2 {
     background-color: #e6e1e1;
-    height: 567px;
+    min-height: 380px;
     width: 80%;
     border-radius: 50px;
-    margin: 3em;
-    
+    margin: 2.5em;
+    position: static;
+   
 }
 
 .container2 h1 {
@@ -40,6 +41,7 @@
     height: 75%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     border-right: 4px double maroon;
     overflow: auto;
 }
@@ -57,7 +59,7 @@
     padding: 0;
     text-align: justify;
     position: relative;
-    left: 6.5em;
+    /* left: 6.5em; */
 }
 
 .backgroundContainer{
@@ -78,7 +80,8 @@
     transform: scale(.4);
     border: #1c1e26 solid 1px;
     border-radius: 100px;
-   margin-top: 35px;
+    position: relative;
+    bottom: 20px;
 }
 
 .image{
@@ -86,20 +89,27 @@
     height: 75%;
     display: flex;
     flex-direction: column;
-    
     overflow: auto;
+    align-items: center;
 }
 
 .list-holders {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 100%;
+    position: relative;
+    left: 30px;
 }
 
 .list-holders ul {
     padding-right: 3em;
     margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* position: relative;
     bottom: 1em;
     text-align: left;
@@ -117,6 +127,8 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    position: relative;
+    bottom: 20px;
   }
 
   .cod-btn:hover {
@@ -127,6 +139,8 @@
     cursor: pointer;
     box-shadow: 2px 2px 5px #358a7c;
     position: relative;
-    top: 2px;
+    top: -17px;
     left: 2px;
   }
+
+  

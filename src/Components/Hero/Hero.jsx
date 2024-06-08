@@ -9,13 +9,10 @@ export default function Hero() {
     <div id="hero">
       {/* <NavBar position='fixed'/> */}
       <div className='hero'>
-        <div className='heroImage' style={{ backgroundImage: `url(${heroImage})`,  }}>
-          <h1>Cocktail TITLE</h1>
-          {/* <div className='heroTitle'>
-            <h2>Cocktail TITLE</h2>
-            <p>Not sure where to begin to make your own cocktails?</p>
-          </div> */}
-          
+        <div className='heroImage' style={{ backgroundImage: `url(${heroImage})` }}>
+          <p className='welcomeText'>Welcome to</p>
+          <h1>Cocktail Craft</h1>
+          <p className='swipeText'>Scroll down to begin your journey</p>
         </div>
       </div>
     </div>

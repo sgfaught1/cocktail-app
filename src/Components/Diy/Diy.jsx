@@ -104,7 +104,7 @@ export default function Diy() {
 
   return (
     <div id='diy' className='diy'>
-      
+
       <div className='container1'>
 
         <h1>Looking for something new?</h1>
@@ -134,12 +134,17 @@ export default function Diy() {
             {selectedDrinkImage.drinkImage && <img src={selectedDrinkImage.drinkImage} alt={selectedDrinkImage.drink} />}
           </div>
           <div className='instructions-container' style={{ borderLeft: selectedDrinkImage.inst !== '' && 'maroon 4px dotted', borderRight: selectedDrinkImage.inst !== '' && 'maroon 4px dotted' }}>
-            <p>{selectedDrinkImage.inst}</p>
-          </div>
-          <div className='big-inner2-instructions'>
             <div>
               {selectedDrinkImage.drinkImage && <h3>Step 3: Enjoy your {selectedDrinkImage.drink}</h3>}
             </div>
+            <p>{selectedDrinkImage.inst}</p>
+          </div>
+          <div className='big-inner2-instructions'>
+            {selectedDrinkImage.drink !== '' && <div className='holder'>
+              <h3>Measurements</h3>
+              <h3>Ingredients</h3>
+            </div>
+            }
             <div className='ingredients-measurements'>
               <ul className='measurements-list'>
                 {selectedDrinkImage.measurementsDIY.map((mes, index) => (
@@ -157,7 +162,7 @@ export default function Diy() {
 
         </div>
       </div>
-      
+
     </div>
   );
 }

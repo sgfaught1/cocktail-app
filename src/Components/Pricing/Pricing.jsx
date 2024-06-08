@@ -10,9 +10,9 @@ export default function Pricing() {
      
       <div className='pricing'>
         
-        <PricingCard title="Pricing Title 1" info="Info about Card" price="19.99" />
-        <PricingCard title="Pricing Title 2" info="Info about Card" price="49.99" />
-        <PricingCard title="Pricing Title 3" info="Info about Card" price="99.99" />
+        <PricingCard title="Intimate Indulgence" info="Info about Card" price="19.99" color = '#f79f83'/>
+        <PricingCard title="Social Soiree" info="Info about Card" price="49.99" color = '#00573b'/>
+        <PricingCard title="Grand Gala" info="Info about Card" price="99.99" color = '#cf4c5e'/>
 
 
       </div>

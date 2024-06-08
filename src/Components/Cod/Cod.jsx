@@ -94,21 +94,23 @@ export default function Cod() {
     <div className='main2' id='cod'>
 
       <div className='container2'>
-        { daily.drink === 'Let our bartender pick for you!' ?<h1>Feeling Adventurous?</h1> : <h1>Bartender Selected:</h1> } 
+        {daily.drink === 'Let our bartender pick for you!' ? <h1>Feeling Adventurous?</h1> : <h1>Bartender Selected:</h1>}
         <h2>
           {daily.drink}
           {daily.category !== "" && ' - '}
           {daily.category}
         </h2>
-        {daily.drink === 'Let our bartender pick for you!' ? <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', top: '50px'}}><LocalBarIcon style = {{fontSize: '150px'}} /> </div>  : <div className='inner-container2'>
+        {daily.drink === 'Let our bartender pick for you!' ? <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', top: '50px' }}><LocalBarIcon style={{ fontSize: '150px' }} /> </div> : <div className='inner-container2'>
           <section className='form1'>
-            <h3 style={{textDecoration: 'underline'}}>Instructions</h3>
+            <h3 style={{ textDecoration: 'underline' }}>Instructions</h3>
             <p>{daily.instructions}</p>
           </section>
           <section className='image'>
-            <h3 style={{textDecoration: 'underline'}}>Ingredients</h3> 
+            <div>
+              <h3 style={{ textDecoration: 'underline' }}>Measurements & Ingredients</h3>
+            </div>
             <div className='list-holders'>
-              
+
               <ul>
                 <span style={{ display: 'inline' }}> {daily.measurements.map(mes => {
                   return (
@@ -127,9 +129,9 @@ export default function Cod() {
             </div>
           </section>
         </div>}
-       
+
       </div>
-      <button className = "cod-btn"onClick={setCocktail}>Bartender's Choice</button>
+      <button className="cod-btn" onClick={setCocktail}>Bartender's Choice</button>
       {/* <div className='backgroundContainer' style={{
         backgroundImage:
           daily.image === "Picture!" ? `url(${neonSign})` : `url(${daily.image})`

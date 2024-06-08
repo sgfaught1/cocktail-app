@@ -1,5 +1,5 @@
 .main3 {
-    height: 50%;
+    height: 100%;
     width: 100%;
     background-color: #1c1e26;
     height: 100vh;
@@ -10,6 +10,8 @@
 }
 
 .cp-container {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +19,7 @@
 }
 
 .cp-inner {
-    height: 80%;
+    height: 100%;
     width: 100%;
     background-color: #1c1e26;
     display: flex;
@@ -28,27 +30,23 @@
 }
 
 .cp-inner h1 {
-    height: 100%;
+    height: 20%;
     width: 100%;
+    font-size: 2.5em;
     text-align: center;
-    color: antiquewhite;
+    color: #e6e1e1;
 }
 
-.arrow-icon-container {
-    
-        position: relative;
-        top: 9.5em;
- 
-}
 
 .crowd-pleasers-container {
     display: flex;
-    height: 100%;
+    max-height: 800px;
     overflow-x: auto;
+    /* overflow-y: hidden; */
     width: 100%;
-    padding: 10px 0; /* Adjust as needed */
     position: relative;
-    top: 30px;
+    top: 20px;
+    margin: 0;
   }
   
   .crowd-pleasers-container > * {
@@ -62,32 +60,13 @@
   }
 
  .cp-titles h2{
-    color: antiquewhite;
+    color: #e6e1e1;
     text-align: center;
+    
  }
  
  .cp-titles div{
-    color: antiquewhite;
+    color: #e6e1e1;
     text-align: center;
  }
 
- .lil-arrow {
-    position: relative;
-    top: 6em;
-    text-align: center;
-   
-    animation: bounce 4s infinite;
-    z-index: 2;
-    background: none;
-    transform: scale(4);
-}
-
-
-@keyframes bounce {
-    0%, 100% {
-        transform: scale(4) translateY(0);
-    }
-    50% {
-        transform: scale(4) translateY(-10px);
-    }
-}

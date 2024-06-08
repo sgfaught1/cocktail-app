@@ -1,7 +1,7 @@
 .card {
     min-height: 600px;
     width: 300px;
-    background-color: antiquewhite;
+    background-color: #e6e1e1;
     margin: .5em;
     border-radius: 10px;
     display: flex;
@@ -59,14 +59,14 @@
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
+    background-color: #e6e1e1;
     color: black;
     padding: 10px;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #bbb;
+    background-color: #e6e1e1;
     color: black;
     transform: rotateY(180deg);
     border-radius: 10px;

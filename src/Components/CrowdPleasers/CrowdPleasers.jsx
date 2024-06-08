@@ -17,7 +17,7 @@ export default function CrowdPleasers() {
       <div className='cp-inner'>
         <div className='cp-titles'>
           <h1>Still can't decide? </h1>
-          <h2>Try our Favorites</h2>
+          <h2>Find your Crowd</h2>
           {/* <div className='lil-arrow'><SouthIcon /></div> */}
         </div>
         <div className='main3' id='crowd-pleasers'>

@@ -179,15 +179,17 @@ input {
 
 .instructions-container {
     width: 30%;
-    /* border-left: maroon 4px dotted;
-    border-right: maroon 4px dotted; */
+    height: 80%;
     text-align: center;
     align-self: center;
     padding: 10px;
-    /* margin-top: 20px; */
-    overflow-y: auto; /* Enable vertical scrolling */
-    flex-grow: 1; /* Allow the instructions container to grow and fill the available space */
+    overflow-y: auto; 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 
 .diy-btn {
     background-color: #4c8994;
@@ -211,4 +213,12 @@ input {
     position: relative;
     top: 2px;
     left: 2px;
+}
+
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+   
 }
