@@ -18,9 +18,9 @@ export default function PricingCard({ title, info, price, color, backgroundImage
         <p>{info}</p>
       </div>
       <div className='pcard-price'>
-        <p>${price}</p>
+        <p>{price}</p>
       </div>
-      <button className='pricing-btn'>Buy Now</button>
+      <a href= 'mailto:sgfaught1@gmail.com' className='pricing-btn'>Contact for pricing</a>
     </div>
   );
 }

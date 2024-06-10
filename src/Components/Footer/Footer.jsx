@@ -116,9 +116,9 @@ export default function Footer() {
             <div className='contact'>
                 <h2>Contact Us</h2>
                 <div className='contact2'>
-                    <a href=""><FacebookIcon style={{ fontSize: '3em', color: '#196aff' }} /></a>
-                    <a href=""><InstagramIcon style={{ fontSize: '3em', color: '#fe1867' }} /></a>
-                    <a href=""><LinkedInIcon style={{ fontSize: '3em', color: 'white' }} /></a>
+                    <a target = '_blank' href="https://www.facebook.com/"><FacebookIcon style={{ fontSize: '3em', color: '#196aff' }} /></a>
+                    <a target = '_blank' href="https://www.instagram.com/"><InstagramIcon style={{ fontSize: '3em', color: '#fe1867' }} /></a>
+                    <a target = '_blank' href='https://www.linkedin.com/in/spencer-faught-4b1960152/'><LinkedInIcon style={{ fontSize: '3em', color: 'white' }} /></a>
 
                 </div>
                 <p>
