@@ -151,3 +151,37 @@ body {
     top: 120px;
   }
 }
+
+@media only screen and (min-height: 1080px) {
+  .heroImage .welcomeText {
+    font-size: 2em;
+    bottom: 170px;
+  }
+
+  .heroImage h1 {
+    font-size: 6em;
+    bottom: 250px;
+  }
+  .heroImage .swipeText {
+    font-size: 2em;
+    top: 200px;
+  }
+  
+}
+
+@media only screen and (min-width: 1500px) {
+  .heroImage .welcomeText {
+    font-size: 3em;
+    bottom: 170px;
+  }
+
+  .heroImage h1 {
+    font-size: em;
+    bottom: 250px;
+  }
+  .heroImage .swipeText {
+    font-size: 2em;
+    top: 200px;
+  }
+  
+}

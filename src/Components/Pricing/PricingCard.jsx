@@ -1,23 +1,26 @@
-import React from 'react'
-import './PricingCard.css'
+import React from 'react';
+import './PricingCard.css';
 
-export default function PricingCard({ title, info, price, color }) {
-    return (
-        <div className='pricing-card'>
-            <div className='p-card-title' style={{backgroundColor: color, height: '10%', width: '100%'}}>
-                <h3>
-                    {title}
-                </h3>
-            </div>
-            <div>
-                <p>{info}</p>
-            </div>
-            <div>
-                <p>${price}</p>
-            </div>
-            <button className='pricing-btn'>Buy Now</button>
+export default function PricingCard({ title, info, price, color, backgroundImage }) {
+  const cardStyle = {
+    backgroundColor: color,
+    backgroundImage: `url(${backgroundImage})`, // Set the background image
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  };
 
-
-        </div>
-    )
+  return (
+    <div className='pricing-card' style={cardStyle}>
+      <div className='p-card-title'>
+        <h3>{title}</h3>
+      </div>
+      <div className='pcard-info'>
+        <p>{info}</p>
+      </div>
+      <div className='pcard-price'>
+        <p>${price}</p>
+      </div>
+      <button className='pricing-btn'>Buy Now</button>
+    </div>
+  );
 }

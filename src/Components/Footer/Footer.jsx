@@ -25,7 +25,7 @@ export default function Footer() {
                     alignItems="center"
                     gap={4}
                     p={2}
-                    sx={{ border: '2px solid grey' }}
+                    sx={{ border: '2px solid grey' }}                  
                 >
                     The Daiquiri was a favorite of Ernest Hemingway. He often enjoyed a variation known as the Hemingway Daiquiri, which includes grapefruit juice and maraschino liqueur.                </Box>
                 <Box
@@ -34,9 +34,11 @@ export default function Footer() {
                     my={4}
                     display="flex"
                     alignItems="center"
+                    
                     gap={4}
                     p={2}
                     sx={{ border: '2px solid grey' }}
+                  
                 >
                     The Mint Julep is known as the official drink of the Kentucky Derby. It's a refreshing cocktail made with bourbon, mint, sugar, and water, traditionally served in a silver or pewter cup.
                 </Box>
@@ -48,7 +50,7 @@ export default function Footer() {
                     alignItems="center"
                     gap={4}
                     p={2}
-                    sx={{ border: '2px solid grey' }}
+                    sx={{ border: '2px solid grey' }}                   
                 >
                     The classic garnish for a Pina Colada is a slice of pineapple and a maraschino cherry. Sometimes, it's also served with a paper umbrella for a tropical touch.
                 </Box>
@@ -57,7 +59,7 @@ export default function Footer() {
                 <Accordion sx={{ backgroundColor: '#e6e1e1' }} className='fixed-height-summary'>
                     <AccordionSummary
                         
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon sx={{color: '#4c8995', fontWeight: 'bold'}}/>}
                         aria-controls="panel1-content"
                         id="panel1-header"
                     >
@@ -86,7 +88,7 @@ export default function Footer() {
                 <Accordion sx={{ backgroundColor: '#e6e1e1' }} className='fixed-height-summary'>
                     <AccordionSummary
 
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon sx={{color: '#4c8995', fontWeight: 'bold'}}/>}
                         aria-controls="panel2-content"
                         id="panel2-header"
                     >
@@ -99,7 +101,7 @@ export default function Footer() {
                 <Accordion sx={{ backgroundColor: '#e6e1e1' }} className='fixed-height-summary'>
                     <AccordionSummary
 
-                        expandIcon={<ExpandMoreIcon />}
+                        expandIcon={<ExpandMoreIcon sx={{color: '#4c8995', fontWeight: 'bold'}}/>}
                         aria-controls="panel2-content"
                         id="panel2-header"
                     >

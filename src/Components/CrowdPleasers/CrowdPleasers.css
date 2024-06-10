@@ -70,3 +70,11 @@
     text-align: center;
  }
 
+ @media only screen and (max-height: 768px) {
+  .crowd-pleasers-container{
+    transform: scale(.99);
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+}
