@@ -105,12 +105,12 @@
   
     .pcard-info {
       font-size: 1em; /* Decrease font size for smaller screens */
-      padding: 5px; /* Adjust padding for smaller screens */
+      padding: 3px; /* Adjust padding for smaller screens */
       margin: 5px;
     }
   }
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 425px) and (max-height: 896px) {
     .pricing-card {
       width: 90%; /* Adjust width for smaller screens */
       margin: 1em auto; /* Center the card horizontally */
@@ -119,6 +119,11 @@
   
     .pricing-card h3 {
       font-size: 1.2em; /* Decrease font size for smaller screens */
+    }
+
+    .p-card-title {
+      padding: 0 10px;
+      margin: 6px;
     }
   
     .pcard-price {
@@ -166,3 +171,29 @@
     }
   }
   
+  @media only screen and (max-width: 1024px) and (max-height: 768px) {
+    
+  
+    .pricing-card h3 {
+      font-size: 1.5em; /* Decrease font size for smaller screens */
+      
+    }
+  
+    .pcard-price {
+      font-size: 1em; /* Decrease font size for smaller screens */
+      padding: 5px 15px; /* Adjust padding for smaller screens */
+      margin: 5px;
+    }
+  
+    .pricing-btn {
+      font-size: 14px; /* Decrease font size for smaller screens */
+      padding: 10px 20px; /* Adjust padding for smaller screens */
+      margin: 5px;
+    }
+  
+    .pcard-info {
+      font-size: 1em; /* Decrease font size for smaller screens */
+      padding: 3px; /* Adjust padding for smaller screens */
+      margin: 5px;
+    }
+  }
