@@ -197,3 +197,20 @@
             padding: 0;
         }
     }
+
+    @media only screen and (max-width: 390px) and (max-height: 844px) {
+        .backgroundContainer img {
+            transform: scale(.2);
+            position: relative;
+            bottom: 50px;
+        }
+        .form1 {
+          transform: scale(.7);
+        }
+        .image {
+            transform: scale(.7);
+        }
+        .container2{
+            transform: scale(.85);
+        }
+      }

@@ -161,13 +161,15 @@
     }
   }
 
-  @media only screen and (max-width: 425px) and (max-height: 896px) {
+  @media only screen and (max-width: 430px) and (max-height: 932px) {
     .contact {
         position: relative;
         top: 211px;
     }
 
-   
+   .box-flex{
+    display: none;
+   }
 
     .footer-accordian{
         position: relative;
@@ -179,6 +181,12 @@
   @media only screen and (max-width: 390px) and (max-height: 844px) {
     .contact{
         position: relative;
-        top: 160px;
+        /* transform: scale(.8); */
+        top: -15px;
+    }
+
+    .footer-accordian{
+        position: relative;
+        top: 40px;
     }
   }
